@@ -168,3 +168,21 @@ function onYouTubePlayerAPIReady() {
   });
 }
 ```
+
+## ScrollMagic
+[ScrollMagic](https://github.com/janpaepke/ScrollMagic)은 스크롤과 요소의 상호 작용을 위한 자바스크립트 라이브러리   
+대표적으로 어떤 요소가 현재 화면에 보이는 상태인지를 확인할 때 사용   
+<br/>
+[ScrollMagic API](https://scrollmagic.io/docs/)
+```html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+```
+```javascript
+new ScrollMagic
+  .Scene({ // 감시할 장면(Scene)을 추가
+    triggerElement: spyEl, // 보여짐 여부를 감시할 요소를 지정
+    triggerHook: .8 // 화면의 80% 지점에서 보여짐 여부 감시
+  })
+  .setClassToggle(spyEl, 'show') // 요소가 화면에 보이면 show 클래스 추가
+  .addTo(new ScrollMagic.Controller()) // 컨트롤러에 장면을 할당(필수!)
+```
