@@ -49,7 +49,7 @@ fadeEls.forEach(function (fadeEl, index) {
 
 // new Swiper(선택자, 옵션)
 new Swiper('.notice-line .swiper', {
-  direction: 'vertical',  // 기본값은 horizontal
+  direction: 'vertical',  // 기본값은 horizontal(명시할 필요 X)
   autoplay: true,
   loop: true
 });
@@ -68,6 +68,16 @@ new Swiper('.promotion .swiper', {
   navigation: {
     prevEl: '.promotion .swiper-prev',
     nextEl: '.promotion .swiper-next'
+  }
+});
+new Swiper('.awards .swiper', {
+  autoplay: true,
+  loop: true,
+  spaceBetween: 30,
+  slidesPerView: 5,
+  navigation: {
+    prevEl: '.awards .swiper-prev',
+    nextEl: '.awards .swiper-next'
   }
 });
 
