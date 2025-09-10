@@ -1,5 +1,5 @@
 # ☕STARBUCKS
-스타벅스 랜딩 페이지(홈페이지) 만들기
+스타벅스 랜딩 페이지(홈페이지) 만들기   
 [DEMO+signin](https://willowy-sorbet-004876.netlify.app/) (netlify로 배포)
 
 ## 오픈그래프(The Open Graph protocol)
